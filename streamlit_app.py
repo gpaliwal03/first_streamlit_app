@@ -24,3 +24,14 @@ streamlit.multiselect("Pick some fruits :",list(my_fruit_list.index))
 #Display teh table on the page
 streamlit.dataframe(my_fruit_list)
 
+#Choose the Fruit Name Column as the Index
+my_fruit_list = my_fruit_list.set_index('Fruit')
+
+#Lets put a pick list here so they can pick the fruit they want to include 
+streamlit.multiselect("Pick some fruit:",list(my_fruit_list.index))
+
+#display the table on the page
+Streamlit.dataframe(my_fruit_list)
+
+
+
