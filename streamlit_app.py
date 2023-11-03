@@ -94,5 +94,6 @@ streamlit.dataframe(my_data_row)
 streamlit.header("Second Text Entry!")
 add_my_fruit = streamlit.text_input('What fruit would you like add?','jackfruit')
 #streamlit.text("Thanks for adding jackfruit")
-#streamlit.write('Thanks for adding',add_my_fruit)
+streamlit.write('Thanks for adding',add_my_fruit)
+
 
