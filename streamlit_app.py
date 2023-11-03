@@ -88,4 +88,4 @@ my_data_row = my_cur.fetchone()
 #streamlit.text(my_data_row)
 
 streamlit.header("The Fruit load list contains:")
-streamlit.header(my_data_row)
+streamlit.dataframe(my_data_row)
