@@ -175,7 +175,7 @@ streamlit.header("View Our Fruit List-Add Your Favorites!")
 if streamlit.button('Get Fruit Load List:'):
     my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
     my_data_row_3 = get_fruit_load_list()
-    my_cnx.close()
+    my_cnx.close()  #we open a Snowflake Connection each time a button on the page is clicked, let's also close the connection at the end of each button's script #
     streamlit.dataframe(my_data_row_3)
 
 
