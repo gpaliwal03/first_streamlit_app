@@ -103,11 +103,7 @@ try:
   else:
        back_from_function = get_fruityvice_data(fruit_choice)
        streamlit.dataframe(fruityvice_normalized); 
-
-
-
-
-
+    
 streamlit.stop()
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
